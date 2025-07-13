@@ -1,9 +1,10 @@
 package ConditionalStatements;
 
+import java.lang.String;
 import java.util.Scanner;
 
 public class BooleanLogic {
-    public static void main(String [] args){
+    public static void main(String[] args){
 //      Считывание с консоли
         Scanner inputFromLine = new Scanner((System.in));
         System.out.print("Введите значение a: ");
@@ -35,29 +36,6 @@ public class BooleanLogic {
         }
         else {
             System.out.println("a и b равны");
-        }
-
-
-//    Вывод сообщений с помощью строковых переменных
-
-        String firstNumber = "Введите значение c: ";
-        String secondNumber = "Введите значение d: ";
-        String firstIsBigger = "c - самое большое число";
-        String secondIsBigger = "d - самое большое число";
-        String numAreEquals = "c и d равны";
-
-
-        System.out.print(firstNumber);
-        int c = inputFromLine.nextInt();
-        System.out.print(secondNumber);
-        int d = inputFromLine.nextInt();
-        if (c > d){
-            System.out.println(firstIsBigger);
-        } else if (c < d) {
-            System.out.println(secondIsBigger);
-        }
-        else {
-            System.out.println(numAreEquals);
         }
     }
 }
